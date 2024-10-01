@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kalathoki</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-modified.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+<body>
+    <!-- Nav menu -->
+        
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Kalathoki</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Dark Mode -->
+
+            <div style="display: flex; margin-left: -20px;">
+                <div class="mode">
+                    <div class="moon-sun" id="toggle-switch">
+                        <i class="fa fa-moon" id="moon"></i>
+                        <i class="fa fa-sun" id="sun"></i>
+                    </div>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main -->
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I'm</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is Hemraj Kalathoki, I'm a web developer with 3+ years of experience.</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn hire-btn">Hire Me</button>
+                        <button class="btn">Download CV<i class="uil uil-file"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon_circle"></div>
+                        <div class="icon"><a href="https://linkedin.com/in/hemrajkalathoki/" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a></div>
+                        <div class="icon"><a href="https://twitter.com/HR_Kalathoki/" target="_blank"><i class="uil uil-twitter-alt"></i></a></div>
+                        <div class="icon"><a href="https://github.com/HemrajKalathoki" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/kalathoki.hemraj/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+            
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="images/hero.png" alt="Kalathoki">
+                    </div>
+                </div>
+            </section>
+
+            <!-- about box -->
+
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="images/CEO_kalathoki.JPG" alt="" class="profile" />
+                                    <h2>Web Developer</h2>
+                                    <p>My name is Hemraj! I'm a web developer with 3+ years of experience.</p>
+                                </figcaption>
+                            </figure>
+                            <!-- <button class="about-me-btn">Hire Me</button> -->
+                            <a href="#contact" class="about-me-btn">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per html">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar css">
+                                <span class="skill-per css">
+                                    <span class="tooltip">85%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+                            <div class="skill-bar js">
+                                <span class="skill-per js">
+                                    <span class="tooltip">60%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Bootstrap-5</span>
+                            <div class="skill-bar b5">
+                                <span class="skill-per b5">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Java</span>
+                            <div class="skill-bar java">
+                                <span class="skill-per java">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">MySQL</span>
+                            <div class="skill-bar sql">
+                                <span class="skill-per sql">
+                                    <span class="tooltip">85%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">PHP</span>
+                            <div class="skill-bar php">
+                                <span class="skill-per php">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- Projects box -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>10+ Finished Projects</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clients</h3>
+                        <label>10+ Happy Clients</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Experience</h3>
+                        <label>3+ Years in web development</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact box -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Let's Work Together</h1>
+                    <span>Do you have a project in your mind, Contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i>Email: hemraj.kalathoki3@gmail.com</p>
+                            <p><i class="uil uil-phone"></i>Phone: +977 9869960233</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" id="cName" placeholder="Your Name">
+                                    <input type="text" class="input-field" id="cEmail" placeholder="Your Email">
+                                </div>
+                                <div class="text-area">
+                                    <input type="text" class="input-subject" id="mSubject" placeholder="Subject">
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="btn">Send<i class="uil uil-message"></i> </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+                    
+                    <div class="col">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="eb5c4e4b-22c6-4884-aac8-78b5b089d5c4">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" name="name" class="input-field" id="cName" placeholder="Your Name" required>
+                                    <input type="email" name="email" class="input-field" id="cEmail" placeholder="Your Email" required>
+                                </div>
+                                <div class="text-area">
+                                    <input type="text" name="subject" class="input-subject" id="mSubject" placeholder="Subject" required>
+                                    <textarea id="message" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" name="message" class="btn">Send<i class="uil uil-message"></i> </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><a href="https://linkedin.com/in/hemrajkalathoki/" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a></div>
+                <div class="icon"><a href="https://twitter.com/HR_Kalathoki/" target="_blank"><i class="uil uil-twitter-alt"></i></a></div>
+                <div class="icon"><a href="https://github.com/HemrajKalathoki" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/kalathoki.hemraj/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kalathoki</a> -All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
