@@ -505,13 +505,13 @@ i{
     animation-delay: 0.1s;
     width: 75%;
 }
-.sql{
+.skill-per.sql{
     animation-delay: 0.1s;
-    width: 15%;
+    width: 85%;
 }
 .skill-per.php{
     animation-delay: 0.1s;
-    width: 15%;
+    width: 65%;
 }
 
 @keyframes progress{
