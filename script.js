@@ -1,12 +1,23 @@
 function myMenuFunction() {
     var menuBtn = document.getElementById("myNavMenu");
-
-    if (menuBtn.className == "nav-menu") {
-        menuBtn.className += "responsive";
+    if (menuBtn.classList.contains("responsive")) {
+        menuBtn.classList.remove("responsive");
     } else {
-        menuBtn.className += "nav-menu";
+        menuBtn.classList.add("responsive");
     }
 }
+
+// Add event listener for each nav link to close the menu after click
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        var menuBtn = document.getElementById("myNavMenu");
+        if (menuBtn.classList.contains("responsive")) {
+            menuBtn.classList.remove("responsive");
+        }
+    });
+});
 
 
 /* ------- Dark mode ---------*/
@@ -77,8 +88,6 @@ const srLeft = ScrollReveal({
 
 srLeft.reveal(".about-info", { delay: 100 });
 srLeft.reveal(".contact-info", { delay: 100 });
-
-
 
 const srRight = ScrollReveal({
     origin: "left",

@@ -165,7 +165,6 @@ body.dark #moon{
     opacity: 0;
 }
 
-
 /* ---- Wrapper ---- */
 
 .wrapper{
@@ -789,9 +788,9 @@ footer{
 
     .nav-menu{
         position: fixed;
-        top: 150px;
+        top: 60px;
         left: -100%;
-        margin-top: 150px;
+        margin-top: 50px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -885,7 +884,10 @@ footer{
 @media only screen and (max-width: 540px){
 
     .featured-name{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .typedText{
+        font-size: 45px;
     }
 
     .featured-image{
@@ -918,4 +920,15 @@ footer{
     .mode{
         margin-left: 50%;
     }
+
+    .contact-info{
+        background: #8749f2;
+    }
+    
+    .contact-info h2,
+    .contact-info p,
+    .contact-info i{
+        color: #ffffffd5;
+    }
+    
 }
