@@ -1,3 +1,17 @@
+const originalTitle = document.title;
+
+window.addEventListener("blur", () => {
+    document.title = "You switched tab 🙁";
+});
+
+window.addEventListener("focus", () => {
+    document.title = "You're back! 😊";
+
+    setTimeout(() => {
+        document.title = originalTitle;
+    }, 2000);
+});
+
 function myMenuFunction() {
     var menuBtn = document.getElementById("myNavMenu");
     if (menuBtn.classList.contains("responsive")) {
