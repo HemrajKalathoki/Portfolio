@@ -1,10 +1,22 @@
 const originalTitle = document.title;
 
+let blinkInterval;
+
+// Function to toggle the title
+function toggleTitle() {
+    document.title = document.title === "You switched tab 🙁" ? "You switched tab" : "You switched tab 🙁";
+}
+
+// Add event listener for when the window loses focus
 window.addEventListener("blur", () => {
-    document.title = "You switched tab 🙁";
+    // Start blinking
+    blinkInterval = setInterval(toggleTitle, 500); // Change the interval time (in milliseconds) as needed
 });
 
+
 window.addEventListener("focus", () => {
+    clearInterval(blinkInterval);
+
     document.title = "You're back! 😊";
 
     setTimeout(() => {
